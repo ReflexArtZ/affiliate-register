@@ -23,7 +23,7 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class ChaturbateControl extends Thread {
-    private static final String CLIENT_API_KEY = "79914d14cfdda3fce37e3e265a6b9210";
+    private static final String CLIENT_API_KEY = "...";
 
     private static final String AGREE_TEXT = "I AGREE";     // text used for the 18 confirmation
     private static final String SIGNUP_TEXT = "Create Free Account";
