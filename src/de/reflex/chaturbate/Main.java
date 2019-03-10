@@ -18,7 +18,7 @@ public class Main implements IProxyCheckDone{
     private static final String PASS_FILE_PATH = "C:\\proxies\\fakeCreds\\pass.txt";
     private static final String USER_FILE_PATH = "C:\\proxies\\fakeCreds\\users.txt";
 
-    private static int money_made = 0;
+    private static int loops = 0;
 
     public static void main(String[] args) throws InterruptedException, IOException, JSONException {
         ChaturbateControl chaturbateControl = new ChaturbateControl();
@@ -31,13 +31,13 @@ public class Main implements IProxyCheckDone{
         for (int i = 0; i < 500; i++) {   //ToDo
             try {
                 if (chaturbateControl.start(CHATURBATE_URL, fakeCredsSupport.getRandomAccount(),rest.getProxy(), 5)) {
-                    money_made++;
-                    DebugHelper.out("[+] You again made 1$!", DebugHelper.Type.SUCCESS);
+                    loops++;
+                    DebugHelper.out("[+] +1 Loop!", DebugHelper.Type.SUCCESS);
                 }
             } catch (Exception e) {
                 continue;
             }
-            DebugHelper.out("[i] Money made > "+money_made, DebugHelper.Type.INFO);
+            DebugHelper.out("[i] Loops made > "+loops, DebugHelper.Type.INFO);
             Thread.sleep(15000);
         }
 
