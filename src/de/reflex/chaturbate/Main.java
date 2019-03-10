@@ -14,7 +14,7 @@ import java.io.IOException;
 
 public class Main implements IProxyCheckDone{
 
-    private static final String CHATURBATE_URL = "https://en.chaturbate.com/in/?track=default&tour=OT2s&campaign=BRMrQ";
+    private static final String CHATURBATE_URL = "...";
     private static final String PASS_FILE_PATH = "C:\\proxies\\fakeCreds\\pass.txt";
     private static final String USER_FILE_PATH = "C:\\proxies\\fakeCreds\\users.txt";
 
